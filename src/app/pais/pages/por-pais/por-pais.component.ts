@@ -15,15 +15,14 @@ export class PorPaisComponent {
 
   buscar(){
     this.hayError = false;
-
-    console.log(this.termino);
-
     this.paisService.buscarPais(this.termino)
       .subscribe({
-        next: (resp) => { console.log(resp)},
+        next: (paises) => { 
+          console.log(paises);
+        },
         error: (err) => { 
           this.hayError = true;
-          console.info(err)
+          console.error(err)
         }
       })  
   }
