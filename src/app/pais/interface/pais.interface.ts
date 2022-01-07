@@ -51,10 +51,10 @@ export interface CoatOfArms {
 }
 
 export interface Currencies {
-    EUR: Eur;
+    PEN: Pen;
 }
 
-export interface Eur {
+export interface Pen {
     name:   string;
     symbol: string;
 }
@@ -70,7 +70,7 @@ export interface Eng {
 }
 
 export interface Gini {
-    "2018": number;
+    "2019": number;
 }
 
 export interface Idd {
@@ -79,6 +79,8 @@ export interface Idd {
 }
 
 export interface Languages {
+    aym: string;
+    que: string;
     spa: string;
 }
 
@@ -94,6 +96,8 @@ export interface Name {
 }
 
 export interface NativeName {
+    aym: Translation;
+    que: Translation;
     spa: Translation;
 }
 
