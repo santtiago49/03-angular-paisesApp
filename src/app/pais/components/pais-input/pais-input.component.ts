@@ -10,6 +10,8 @@ export class PaisInputComponent {
 
   constructor() { }
 
+  // creamos evento con el decorador Output para emitir el termino
+  // obtenido a su componente padre PorPais
   @Output() onEnter: EventEmitter<string> = new EventEmitter();
 
   termino: string = ''
