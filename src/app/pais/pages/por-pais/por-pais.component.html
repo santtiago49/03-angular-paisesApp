@@ -4,8 +4,8 @@
     <div class="col">
         
         <app-pais-input 
-        (onEnter)="buscar( $event )">
-        <!-- escuchamos el evento onEnter  y lo vinculamos a el metodo buscar-->
+        (onEnter)="buscar( $event )"
+        (onDebounce)="sugerencias( $event )">
         </app-pais-input>
 
     </div>
