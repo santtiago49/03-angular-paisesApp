@@ -31,7 +31,7 @@ export class PorPaisComponent {
         next: (paises) => { 
           // vinculamos la propiedad paises a el parametro de buscar()
           this.paises = paises;
-          console.log(paises);
+          // console.log(paises);
         },
         error: (err) => { 
           this.hayError = true;
