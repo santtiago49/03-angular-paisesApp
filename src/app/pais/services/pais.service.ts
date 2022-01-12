@@ -17,7 +17,7 @@ export class PaisService {
   // se crea el metodo que retona un observable de tipo array de Country
   buscarPais( termino: string ): Observable<Country[]> {
     // constante para general el link de solicitud http + el termino
-    const url = `${ this.apiUrl }/name/${ termino }`;
+    const url = `${ this.apiUrl }name/${ termino }`;
 
     return this.http.get<Country[]>(url);
   }
@@ -26,6 +26,12 @@ export class PaisService {
     const url = `${ this.apiUrl }/capital/${ termino }`;
 
     return this.http.get<Country[]>(url);
+  }
+
+  getPaisPorAlpha( id: string ): Observable<Country[]> {
+    const url = `${ this.apiUrl }/alpha/${ id }`;
+
+    return this.http.get<Country[]>(url);  
   }
 
 }

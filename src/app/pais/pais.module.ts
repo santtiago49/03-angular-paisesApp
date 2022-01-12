@@ -8,6 +8,7 @@ import { PorRegionComponent } from './pages/por-region/por-region.component';
 import { VerPaisComponent } from './pages/ver-pais/ver-pais.component';
 import { PaisTablaComponent } from './components/pais-tabla/pais-tabla.component';
 import { PaisInputComponent } from './components/pais-input/pais-input.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -28,7 +29,8 @@ import { PaisInputComponent } from './components/pais-input/pais-input.component
   ],
   imports: [
     FormsModule,
-    CommonModule
+    CommonModule,
+    RouterModule
   ]
 })
 export class PaisModule { }

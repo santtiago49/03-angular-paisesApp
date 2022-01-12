@@ -14,7 +14,9 @@
             <td> <img class="small-flag" [src]="pais.flags.svg"> </td>
             <td> {{pais.capital}},  {{ pais.name.common }} </td>
             <td> {{ pais.population | number }}  </td>
-            <td><a href="#">Ver mas...</a></td>
+            <td>
+                <a [routerLink]="['/pais', pais.cca2]">Ver mas...</a>
+            </td>
         </tr>              
     </tbody>
 </table>
