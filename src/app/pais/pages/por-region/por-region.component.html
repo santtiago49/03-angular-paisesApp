@@ -1,1 +1,8 @@
-<p>por-region works!</p>
+<h2>Por región <small>{{ regionActiva }}</small></h2>
+<hr>
+<button
+    (click)="cambiarRegion( region )"
+    [class]="getClassCSS(region)"
+    *ngFor="let region of regiones">
+        {{ region }}
+</button>
