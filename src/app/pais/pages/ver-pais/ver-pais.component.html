@@ -23,9 +23,26 @@
                 <li class="list-group-item">
                     <strong>Población: </strong> {{ pais.population | number }}
                 </li>
+                <li class="list-group-item">
+                    <strong>Código numerico: </strong> {{ pais.ccn3 }}
+                </li>
+                <li class="list-group-item">
+                    <strong>Código alpha3: </strong> {{ pais.cca3 }}
+                </li>
+                
             </ul>
         </div>
 
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <h3>Lenguajes</h3>
+            <!-- Implemente el modulo keyvalue para obtener el valor del objeto 
+            Language -->
+            <span *ngFor="let lang of pais.languages | keyvalue" 
+                class="badge bg-primary mr-1">{{ lang.value  }}</span>
+        </div>
     </div>
 
 </ng-template>

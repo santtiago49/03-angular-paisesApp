@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { switchMap, tap } from "rxjs/operators";
+import { switchMap, tap } from 'rxjs/operators';
+import { KeyValue } from '@angular/common';
+
 
 
 import { PaisService } from '../../services/pais.service';
-import { Country } from '../../interface/pais.interface';
+import { Country, Languages } from '../../interface/pais.interface';
 
 @Component({
   selector: 'app-ver-pais',
@@ -21,6 +23,7 @@ export class VerPaisComponent implements OnInit {
     private paisService: PaisService
   ) { }
 
+  
 
   ngOnInit(): void {
 
